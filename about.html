@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About SPECTER, an Infrastructure OSINT and Network Security platform.">
+  <title>About SPECTER</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="about-page">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="SPECTER home">
+        <span class="brand-name">SPECTER</span>
+        <span class="brand-tagline">Infrastructure Intelligence</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a class="nav-link active" href="about.html" aria-current="page">About</a>
+      </nav>
+    </header>
+
+    <main class="manifesto">
+      <header class="manifesto-intro">
+        <p class="eyebrow">SPECTER / MANIFESTO</p>
+        <h1>About SPECTER</h1>
+      </header>
+
+      <section>
+        <h2>The internet is not empty.</h2>
+        <p>Every domain leaves traces.</p><p>Every server answers something.</p><p>Every certificate connects identities.</p><p>Every IP belongs somewhere.</p><p>Every service exposes a piece of infrastructure.</p><p>Most of it is visible.</p><p>People simply do not look at it together.</p>
+        <p><strong>SPECTER exists to change that.</strong></p>
+      </section>
+
+      <section>
+        <h2>What is SPECTER?</h2>
+        <p>SPECTER is an Infrastructure OSINT and Network Security platform built to discover, connect and monitor internet-facing infrastructure.</p><p>It starts with something simple:</p><p>A domain.</p><p>An IP address.</p><p>A hostname.</p><p>Then the surface begins to expand.</p><p>DNS records reveal addresses.</p><p>Certificates reveal names.</p><p>Names reveal subdomains.</p><p>IPs reveal networks.</p><p>Networks reveal services.</p><p>Services reveal technologies.</p><p>And eventually isolated information stops looking isolated.</p><p>It becomes a map.</p>
+      </section>
+
+      <section>
+        <h2>Why I Built It</h2>
+        <p>There was no dramatic beginning.</p><p>No company.</p><p>No security lab.</p><p>No team of engineers.</p><p>Just a cybersecurity student opening too many terminals, too many tabs and too many tools to answer questions that should have been connected from the beginning.</p><p>DNS in one place.</p><p>WHOIS somewhere else.</p><p>Subdomains in another tool.</p><p>Ports in another.</p><p>Certificates somewhere else again.</p><p>Every tool knew something.</p><p>None of them knew the whole target.</p><p>That bothered me.</p><p>So I started building SPECTER.</p><p>Not because the existing tools were bad.</p><p>Because the information between them was missing.</p>
+      </section>
+
+      <section>
+        <h2>I Am Not a Software Engineer</h2>
+        <p>I did not start this project as an experienced developer.</p><p>I am still learning.</p><p>Networking.</p><p>Cybersecurity.</p><p>Infrastructure.</p><p>Programming.</p><p>Architecture.</p><p>Sometimes I build something and later realize it should have been designed differently.</p><p>Then I rebuild it.</p><p>That is part of SPECTER.</p><p>It is being built by someone learning the same systems the platform is designed to investigate.</p><p>And every new capability usually starts with the same question:</p><p><strong>What else can this target tell us?</strong></p>
+      </section>
+
+      <section>
+        <h2>Everything Leaves a Trace</h2>
+        <p>The public internet exposes enormous amounts of infrastructure metadata by design.</p><p>Not passwords.</p><p>Not magic.</p><p>Information.</p><p>DNS has to answer.</p><p>Certificates have to identify systems.</p><p>Servers have to listen.</p><p>Networks have to route traffic.</p><p>Domains have to point somewhere.</p><p>Public services have to exist somewhere.</p><p>Individually, those signals may mean very little.</p><p>Together, they can reveal an entire infrastructure footprint.</p><p>SPECTER is built around collecting those signals and connecting them.</p>
+      </section>
+
+      <section>
+        <h2>One Target. Multiple Layers.</h2>
+        <div class="terminal-flow" aria-label="Infrastructure discovery layers">
+          <ol>
+            <li><span>01</span>domain</li><li><span>02</span>subdomains</li><li><span>03</span>DNS records</li><li><span>04</span>IP addresses</li><li><span>05</span>ASN / netblocks</li><li><span>06</span>ports</li><li><span>07</span>services</li><li><span>08</span>certificates</li><li><span>09</span>technologies</li><li><span>10</span>related infrastructure</li><li><span>11</span>historical changes</li>
+          </ol>
+        </div>
+        <p>The deeper you look, the less isolated everything becomes.</p>
+      </section>
+
+      <section>
+        <h2>SPECTER Does Not Replace Security Tools</h2>
+        <p>Nmap already exists.</p><p>Shodan already exists.</p><p>Censys already exists.</p><p>Certificate Transparency already exists.</p><p>DNS tools already exist.</p><p>WHOIS and RDAP already exist.</p><p>They are good at what they do.</p><p>SPECTER is interested in what happens <strong>between them</strong>.</p><p>One tool discovers a host.</p><p>Another sees a certificate.</p><p>Another identifies a service.</p><p>Another knows the network.</p><p>SPECTER attempts to build the context connecting them.</p>
+      </section>
+
+      <section>
+        <h2>Infrastructure Is a Graph</h2>
+        <p>The internet is usually shown as lists.</p><p>Lists of domains.</p><p>Lists of IP addresses.</p><p>Lists of ports.</p><p>Lists of certificates.</p><p>But infrastructure is not a list.</p><p>It is a graph.</p><p>A certificate can connect multiple domains.</p><p>A domain can resolve to multiple IPs.</p><p>Several systems can exist inside the same ASN.</p><p>One IP can expose many services.</p><p>A single discovered host can lead to another layer of infrastructure.</p><p>The long-term goal of SPECTER is to make those relationships visible.</p><p>Not as separate scan results.</p><p>As one environment.</p>
+      </section>
+
+      <section>
+        <h2>Time Changes Everything</h2>
+        <p>A scan only tells you what exists at one moment.</p><p>That is not enough.</p><p>Infrastructure changes silently.</p><p>A new subdomain appears.</p><p>An IP changes.</p><p>A certificate rotates.</p><p>A service disappears.</p><p>A new port becomes publicly reachable.</p><p>Something that did not exist yesterday exists today.</p><p>SPECTER is being designed to remember.</p><p>Snapshots.</p><p>History.</p><p>Differences.</p><p>Changes.</p><p>Because sometimes the most important finding is not what exists.</p><p>It is <strong>what appeared.</strong></p>
+      </section>
+
+      <section>
+        <h2>OSINT Is Only the Beginning</h2>
+        <p>SPECTER combines passive intelligence with authorized active discovery.</p><p>Public sources can reveal:</p>
+        <ul><li>DNS information</li><li>domain registration data</li><li>certificate history</li><li>ASN information</li><li>netblocks</li><li>discovered hosts</li><li>publicly indexed services</li><li>infrastructure relationships</li></ul>
+        <p>Authorized active modules can go further:</p>
+        <ul><li>host discovery</li><li>port scanning</li><li>service identification</li><li>HTTP probing</li><li>TLS inspection</li><li>controlled web discovery</li></ul>
+        <p>The goal is not noise.</p><p>The goal is visibility.</p>
+      </section>
+
+      <section>
+        <h2>Vulnerabilities Need Context</h2>
+        <p>Finding a software version does not automatically mean a machine is vulnerable.</p><p>SPECTER should never pretend otherwise.</p><p>A discovered version may correlate with known CVEs.</p><p>That creates a lead.</p><p>Not proof.</p><p>Future vulnerability intelligence will distinguish between:</p><p><strong>potentially affected</strong></p><p>and</p><p><strong>confirmed vulnerable</strong></p><p>where evidence allows it.</p><p>The platform should explain why something was matched, how confident the match is and where the information came from.</p><p>Evidence first.</p><p>Assumptions second.</p>
+      </section>
+
+      <section>
+        <h2>The Analyst</h2>
+        <p>Eventually SPECTER will have an AI Analyst.</p><p>But it will not invent findings.</p><p>The collectors discover.</p><p>The database remembers.</p><p>The correlation engine connects.</p><p>The analyst explains.</p><p>For example:</p>
+        <blockquote><strong>A new service was observed on port 8080. It was not present in the previous snapshot. The service is publicly reachable and increases the externally visible surface of this asset.</strong></blockquote>
+        <p>The AI is not the source of truth.</p><p>The infrastructure is.</p>
+      </section>
+
+      <section>
+        <h2>Built in the Open</h2>
+        <p>SPECTER is unfinished.</p><p>That is intentional.</p><p>You may see modules change.</p><p>Interfaces disappear.</p><p>Ideas get rebuilt.</p><p>Features that looked small may become entire systems.</p><p>There is no point pretending that a project under active development is already complete.</p><p>You are watching it being built.</p>
+      </section>
+
+      <section>
+        <h2>Why “SPECTER”?</h2>
+        <p>Because most infrastructure is not truly invisible.</p><p>It is simply scattered.</p><p>Hidden between records.</p><p>Between hosts.</p><p>Between certificates.</p><p>Between networks.</p><p>Between one scan and the next.</p><p>SPECTER is built to reveal what is already there.</p>
+      </section>
+
+      <section class="final-section">
+        <h2>The Goal</h2>
+        <p>Start with one asset.</p><p>Follow the traces.</p><p>Build the context.</p><p>Watch what changes.</p><p>Understand the infrastructure.</p>
+        <div class="closing"><strong>The internet talks.</strong><strong>SPECTER listens.</strong></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
